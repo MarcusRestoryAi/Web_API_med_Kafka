@@ -27,6 +27,11 @@ public class DatabaseTest {
         System.out.println("After Test");
     }
 
+    @AfterAll
+    static void afterAll() {
+        System.out.println("Alla test avslutade!");
+    }
+
     @Test
     @Order(1)
     void createUser() {
